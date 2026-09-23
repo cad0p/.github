@@ -5,9 +5,10 @@ Account-wide defaults and shared CI for repositories owned by [`cad0p`](https://
 ## Contents
 
 - **Default community health files** — `SECURITY.md`, `CONTRIBUTING.md`, `PULL_REQUEST_TEMPLATE.md`. These apply to every `cad0p` repository that does not define its own.
+- **Default `AGENTS.md`** — the pinned agent mandate (base text, blob `786d0fb`); a repository can override it with its own.
 - **Reusable workflows** — `.github/workflows/*.yml`. Consuming repositories call them pinned at a full commit SHA.
 
-Not here by design: `AGENTS.md` (per-repo, byte-for-byte), `setup-repo.sh` (local-checkout tooling), repository-specific workflows until a second shared workflow justifies it.
+Not here by design: `setup-repo.sh` (local-checkout tooling), repository-specific workflows until a second shared workflow justifies it.
 
 ## Using a reusable workflow
 
